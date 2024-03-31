@@ -84,9 +84,9 @@ export default function Header() {
 							<span className="sr-only">Open user menu</span>
 							<div
 								className="h-10 w-10 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center"
-								style={{ backgroundImage: 'url("https://source.unsplash.com/80x80?face")' }}
+								style={{ backgroundImage: 'url("https://i.ibb.co/X7yr5Yp/slazzer-edit-image.png")' }}
 							>
-								<span className="sr-only">Marc Backes</span>
+								<span className="sr-only">Faruk Rahman</span>
 							</div>
 						</Menu.Button>
 					</div>

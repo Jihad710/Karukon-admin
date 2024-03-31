@@ -8,7 +8,7 @@ const orderData = [
     id: '1',
     product_name: 'Samsung Mobile',
     customer_id: '23143',
-    customer_name: 'Shirley A. Lape ',
+    customer_name: 'Faruk Rahman Jihad ',
     phone: '01773239086 ',
     email:'Jihadmahmud71@gmail.com',
     order_date: '2022-05-17T03:24:00',
@@ -17,16 +17,17 @@ const orderData = [
     shipment_address: {
       country:'Bangladesh',
       street_address: ': 262/5 West Agargaon, Dhaka 1207',
-      house_number: '272/A', // optional, can be an empty string if not provided
+      house_number: '272/A',
       town_city: 'Cottage Grove',
-      district: 'OR 97424'
+      district: 'Dhaka',
+      order_notes:'বাংলা ভাষা বিকাশের ইতিহাস ১৩০০ বছর পুরনো। চর্যাপদ এ ভাষার আদি নিদর্শন। অষ্টম শতক থেকে বাংলায় রচিত সাহিত্যের বিশাল ভান্ডারের '
     }
   },
   {
     id: '2',
     product_name: 'Iphn 15 Max',
     customer_id: '96453',
-    customer_name: 'Ryan Carroll',
+    customer_name: 'Faruk Rahman Jihad',
     phone: '01773239086 ',
     email:'Jihadmahmud71@gmail.com',
     order_date: '2022-05-14T05:24:00',
@@ -35,16 +36,17 @@ const orderData = [
     shipment_address: {
       country:'Bangladesh',
       street_address: ': 262/5 West Agargaon, Dhaka 1207',
-      house_number: '272/A', // optional, can be an empty string if not provided
+      house_number: '272/A',
       town_city: 'Los Angeles',
-      district: 'CA 90017'
+      district: 'Dhaka',
+      order_notes:'বাংলা ভাষা বিকাশের ইতিহাস ১৩০০ বছর পুরনো। চর্যাপদ এ ভাষার আদি নিদর্শন। অষ্টম শতক থেকে বাংলায় রচিত সাহিত্যের বিশাল ভান্ডারের '
     }
   },
   {
     id: '3',
     product_name: 'Iphn 15 Max',
     customer_id: '96453',
-    customer_name: 'Ryan Carroll',
+    customer_name: 'Faruk Rahman Jihad',
     phone: '01773239086 ',
     email:'Jihadmahmud71@gmail.com',
     order_date: '2022-05-14T05:24:00',
@@ -53,16 +55,17 @@ const orderData = [
     shipment_address: {
       country:'Bangladesh',
       street_address: ': 262/5 West Agargaon, Dhaka 1207',
-      house_number: '272/A', // optional, can be an empty string if not provided
+      house_number: '272/A',
       town_city: 'Los Angeles',
-      district: 'CA 90017'
+      district: 'Dhaka',
+      order_notes:'বাংলা ভাষা বিকাশের ইতিহাস ১৩০০ বছর পুরনো। চর্যাপদ এ ভাষার আদি নিদর্শন। অষ্টম শতক থেকে বাংলায় রচিত সাহিত্যের বিশাল ভান্ডারের '
     }
   },
   {
     id: '5',
     product_name: 'Iphn 15 Max',
     customer_id: '96453',
-    customer_name: 'Ryan Carroll',
+    customer_name: 'Faruk Rahman Jihad',
     phone: '01773239086 ',
     email:'Jihadmahmud71@gmail.com',
     order_date: '2022-05-14T05:24:00',
@@ -71,16 +74,17 @@ const orderData = [
     shipment_address: {
       country:'Bangladesh',
       street_address: ': 262/5 West Agargaon, Dhaka 1207',
-      house_number: '272/A', // optional, can be an empty string if not provided
+      house_number: '272/A',
       town_city: 'Los Angeles',
-      district: 'CA 90017'
+      district: 'Dhaka',
+      order_notes:'বাংলা ভাষা বিকাশের ইতিহাস ১৩০০ বছর পুরনো। চর্যাপদ এ ভাষার আদি নিদর্শন। অষ্টম শতক থেকে বাংলায় রচিত সাহিত্যের বিশাল ভান্ডারের '
     }
   },
   {
     id: '5',
     product_name: 'Iphn 15 Max',
     customer_id: '96453',
-    customer_name: 'Ryan Carroll',
+    customer_name: 'Faruk Rahman Jihad',
     phone: '01773239086 ',
     email:'Jihadmahmud71@gmail.com',
     order_date: '2022-05-14T05:24:00',
@@ -89,12 +93,13 @@ const orderData = [
     shipment_address: {
       country:'Bangladesh',
       street_address: ': 262/5 West Agargaon, Dhaka 1207',
-      house_number: '272/A', // optional, can be an empty string if not provided
+      house_number: '272/A',
       town_city: 'Los Angeles',
-      district: 'CA 90017'
+      district: 'Dhaka',
+      order_notes:'বাংলা ভাষা বিকাশের ইতিহাস ১৩০০ বছর পুরনো। চর্যাপদ এ ভাষার আদি নিদর্শন। অষ্টম শতক থেকে বাংলায় রচিত সাহিত্যের বিশাল ভান্ডারের '
     }
   },
-  // Rest of the order data follows the same structure
+
 ];
 
 
@@ -108,6 +113,7 @@ const ShipmentAddressModal = ({ address, onClose }) => {
     <p className="mb-3"><strong>House Number:</strong> {address.house_number}</p>
     <p className="mb-3"><strong>Town/City:</strong> {address.town_city}</p>
     <p className="mb-3"><strong>District:</strong> {address.district}</p>
+    <p className="mb-3"><strong>Order Notes:</strong> {address.order_notes}</p>
     <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onClick={onClose}>Close</button>
   </div>
 </div>
@@ -126,7 +132,7 @@ const Orders = () => {
 
   return (
     <div className="bg-white px-4 pt-3 pb-4 rounded-sm border border-gray-200 flex-1">
-      <strong className="text-gray-700 font-medium">Recent Orders</strong>
+      <strong className="text-gray-700 font-medium">Total Orders</strong>
       <div className="border-x border-gray-200 rounded-sm mt-3">
         <table className="w-full text-gray-700">
           <thead>
