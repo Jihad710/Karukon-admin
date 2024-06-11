@@ -4,6 +4,7 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import Products from './pages/Products'
 import Orders from './pages/Order'
+import Category from './pages/Category'
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                     <Route index element={<Dashboard />} />
                     <Route path="products" element={<Products />} />
                     <Route path="orders" element={<Orders />} />
+                    <Route path="categories" element={<Category />} />
                 </Route>
                 <Route path="/register" element={<Register />} />
             </Routes>
